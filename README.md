@@ -11,12 +11,12 @@ composer require samueletur/laravel-error-tracking-to-telegram
 Create report function on app/Exceptions/Handler.php
 
 ```bash
-    public function report(Throwable $exception)
-    {
-        LaravelErrorTrackingToTelegram::send($exception);
+public function report(Throwable $exception)
+{
+    LaravelErrorTrackingToTelegram::send($exception);
 
-        parent::report($exception);
-    }
+    parent::report($exception);
+}
 ```
 
 You can publish the config file with:
