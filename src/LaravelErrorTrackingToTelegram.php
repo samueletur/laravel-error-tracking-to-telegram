@@ -9,21 +9,23 @@ class LaravelErrorTrackingToTelegram
 {
     public static function send(Throwable $exception)
     {
-        $telegram = new TelegramApi(env('TELEGRAM_BOT_TOKEN'));
-        $name = 'Erro aplicação '.env('APP_NAME');
-        
-        $message = self::jsonToText([
-            'message' => $exception->getMessage(),
-            'file' => $exception->getFile(),
-            'line' => $exception->getLine(),
-            'url' => url()->full()
-        ]);
-
-        $telegram->sendMessage([
-            'chat_id' => env('TELEGRAM_CHAT_ID'), // Chat Samuel
-            'text' => "<b>{$name}</b>\n{$message}",
-            'parse_mode' => 'HTML',
-        ]);
+        if(config('error_tracking_telegram.telegram_bot_token')) {
+            $telegram = new TelegramApi(env('TELEGRAM_BOT_TOKEN'));
+            $name = 'Erro aplicação '.env('APP_NAME');
+            
+            $message = self::jsonToText([
+                'message' => $exception->getMessage(),
+                'file' => $exception->getFile(),
+                'line' => $exception->getLine(),
+                'url' => url()->full()
+            ]);
+    
+            $telegram->sendMessage([
+                'chat_id' => env('TELEGRAM_CHAT_ID'), // Chat Samuel
+                'text' => "<b>{$name}</b>\n{$message}",
+                'parse_mode' => 'HTML',
+            ]);
+        }
     }
 
     public static function jsonToText($message)
