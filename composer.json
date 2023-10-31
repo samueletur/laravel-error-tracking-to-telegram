@@ -2,6 +2,13 @@
     "name": "samueletur/laravel-error-tracking-to-telegram",
     "description": "This package send an alert notification to telegram when a error from laravel is executed",
     "license": "MIT",
+    "keywords": [
+        "track error",
+        "laravel",
+        "telegram",
+        "laravel_error_tracking_to_telegram"
+    ],
+    "homepage": "https://github.com/samueletur/laravel-error-tracking-to-telegram",
     "autoload": {
         "psr-4": {
             "Samueletur\\LaravelErrorTrackingToTelegram\\": "src/"
@@ -22,5 +29,7 @@
     ],
     "require": {
         "irazasyed/telegram-bot-sdk": "^3.13"
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
