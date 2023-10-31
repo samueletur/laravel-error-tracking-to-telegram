@@ -2,6 +2,7 @@
     "name": "samueletur/laravel-error-tracking-to-telegram",
     "description": "This package send an alert notification to telegram when a error from laravel is executed",
     "license": "MIT",
+    "type": "library",
     "keywords": [
         "track error",
         "laravel",

@@ -19,6 +19,21 @@ public function report(Throwable $exception)
 }
 ```
 
+Create and set parameters on .env
+```bash
+TELEGRAM_BOT_TOKEN='XXXXXXXXXX:XXXXXXXxxxXXxxXxXxx-xXxxXXxXXxXXxxx'
+TELEGRAM_CHAT_ID=999999999
+```
+
+Create a new bot on Telegram
+```bash
+Crie uma conta no Telegram  
+Inicie uma conversa com o @botfather (lembre-se que os robôs oficiais do Telegram têm um tique azul do lado do nome)  
+Clique em iniciar  
+Escolha o comando /newbot  
+Escolha o nome do seu chatbot e faça as configurações gerais  
+```
+
 You can publish the config file with:
 
 ```bash
