@@ -3,7 +3,7 @@
         'name' => 'samueletur/laravel-error-tracking-to-telegram',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '0c6f472bea2ebec3b44df483b041329a8d808c0c',
+        'reference' => 'bc5b2dda72fcc4525ccd9a8ed29a588610bfa36c',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -223,7 +223,7 @@
         'samueletur/laravel-error-tracking-to-telegram' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '0c6f472bea2ebec3b44df483b041329a8d808c0c',
+            'reference' => 'bc5b2dda72fcc4525ccd9a8ed29a588610bfa36c',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
