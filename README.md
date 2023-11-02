@@ -8,15 +8,15 @@ You can install the package via composer:
 composer require samueletur/laravel-error-tracking-to-telegram
 ```
 
-Create report function on app/Exceptions/Handler.php
+Call LaravelErrorTrackingToTelegram in app\Exceptions\Handler inside register function 
 
-```bash
-public function report(Throwable $exception)
-{
-    LaravelErrorTrackingToTelegram::send($exception);
-
-    parent::report($exception);
-}
+```php 
+    public function register(): void
+    {
+        $this->reportable(function (Throwable $e) {
+            LaravelErrorTrackingToTelegram::send($e);
+        });
+    }
 ```
 
 Create and set parameters on .env
