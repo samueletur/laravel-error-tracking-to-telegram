@@ -30,12 +30,11 @@ TELEGRAM_CHAT_ID=999999999
 ```
 
 > **Tip**: How to create a bot token on Telegram.
-
-Crie uma conta no Telegram  
-Inicie uma conversa com o @botfather (lembre-se que os robôs oficiais do Telegram têm um tique azul do lado do nome)  
-Clique em iniciar  
-Escolha o comando /newbot  
-Escolha o nome do seu chatbot e faça as configurações gerais  
+1) Crie uma conta no Telegram
+2) Inicie uma conversa com o @botfather (lembre-se que os robôs oficiais do Telegram têm um tique azul do lado do nome)
+3) Clique em iniciar
+4) Escolha o comando /newbot
+5) Escolha o nome do seu chatbot e faça as configurações gerais  
 
 
 You can publish the config file with:
@@ -72,5 +71,3 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 [link-packagist]: https://packagist.org/packages/samueletur/laravel-error-tracking-to-telegram
 [link-downloads]: https://packagist.org/packages/samueletur/laravel-error-tracking-to-telegram
-[link-author]: https://github.com/samueletur
-[link-contributors]: ../../contributors
