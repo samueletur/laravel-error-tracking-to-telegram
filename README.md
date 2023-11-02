@@ -23,11 +23,20 @@ Call LaravelErrorTrackingToTelegram in app\Exceptions\Handler inside register fu
     }
 ```
 
+## Configuration
+
+Configuring for use within your Laravel app takes place mainly in the `config/error_tracking_telegram.php` file. Each item is broken down in the comment lines above it, describing what that item does and what value(s) it's anticipating. 
+
 Create and set parameters on .env
 ```bash
 TELEGRAM_BOT_TOKEN='XXXXXXXXXX:XXXXXXXxxxXXxxXxXxx-xXxxXXxXXxXXxxx'
 TELEGRAM_CHAT_ID=999999999
 ```
+
+There are also two .env variables you'll need to set depending on if you use notifications:
+
+- **TELEGRAM_BOT_TOKEN**, the token of telegram app
+- **TELEGRAM_CHAT_ID**, ID from your chat or group room.
 
 > **Tip**: How to create a bot token on Telegram.
 1) Crie uma conta no Telegram
@@ -35,7 +44,6 @@ TELEGRAM_CHAT_ID=999999999
 3) Clique em iniciar
 4) Escolha o comando /newbot
 5) Escolha o nome do seu chatbot e faça as configurações gerais  
-
 
 You can publish the config file with:
 
