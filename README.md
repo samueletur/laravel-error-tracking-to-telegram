@@ -25,7 +25,7 @@ TELEGRAM_BOT_TOKEN='XXXXXXXXXX:XXXXXXXxxxXXxxXxXxx-xXxxXXxXXxXXxxx'
 TELEGRAM_CHAT_ID=999999999
 ```
 
-Create a bot token on Telegram
+> **Tip**: How to create a bot token on Telegram.
 
 Crie uma conta no Telegram  
 Inicie uma conversa com o @botfather (lembre-se que os robôs oficiais do Telegram têm um tique azul do lado do nome)  
